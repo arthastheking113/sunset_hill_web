@@ -120,6 +120,8 @@ Write a program that prints how many buildings and which buildings will be able 
                 <p class="lead">
                   <b>Example:</b> The user enter the height of each building in order 2,4,6,2,2,8. The out put will be 4 buildings because 2 < 4 < 6 < 8.
                 </p>
+                <p class="lead">
+                  OR you can simply press the <b>"Advance Button"</b> if you are too <b>lazy like me</b> to enter number.                </p>
                 <br>
                 <div class="text-center">
                   <a target="_blank" href="https://github.com/arthastheking113/sunset_hill_web" >
@@ -287,13 +289,13 @@ function checksunshine(){
   if (!my_array.includes(0) && !my_array.some(isNaN) ) {
     for (i=1; i < my_array.length; i++){
       if (my_array[i] > my_array[i-1] && my_array[i] > temp_max){
-        have_light.push([my_array[i]])
+        have_light.push([i+1])
         temp_max = my_array[i]
       }
     }
     if (have_light.length > 0){
       temp1 = have_light.length + 1
-      temp2 = bar1.toString();
+      temp2 = "1";
       for (each=0; each < have_light.length; each++){
         temp2 += "," + have_light[each].toString()
       }
