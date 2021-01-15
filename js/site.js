@@ -6,7 +6,8 @@ window.onload = function () {
 		title:{
 			text: "Sunset Hills"              
 		},
-		data: [              
+		data: [         
+           
 		{
       color: "#ffca67",
 			type: "column",
