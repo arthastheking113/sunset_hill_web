@@ -171,7 +171,13 @@ window.onload = function () {
       document.getElementById("how_many").placeholder = "You should enter a number different that zero"
       document.getElementById("which_one").placeholder = "You should enter a number different that zero"
     }
-  
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'I got your result!!!',
+      showConfirmButton: false,
+      timer: 1500
+    })  
       chart.render();
   });
   $("#clearword").click(function () {
